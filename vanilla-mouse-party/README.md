@@ -16,11 +16,11 @@ Let's begin by setting up a couple of environment variables. These will be varia
 - Locate the opening and closing `script` tags.
   - We'll need a way to keep track of our mouse position.
     - create a variable called `mousePosition` and set it equal to an object.
-    - Provide it a `x` and a `y` property, both initialized as 0.
-  - Next create a variable called `drawId` with no initial value.
-    - We'll use this variable to keep track of when the dots should be on or off the screen.
+    - DONE Provide it a `x` and a `y` property, both initialized as 0.
+  - DONE Next create a variable called `drawId` with no initial value.
+    - NOTE We'll use this variable to keep track of when the dots should be on or off the screen.
   - We'll also need a function to handle the randomizing of the color, positioning, and size of our dots.
-    - Add this code beneath the `drawId` variable created above.
+    - DONE Add this code beneath the `drawId` variable created above.
       ```js
       function getRandomNumber(min, max) {
         return Math.round(Math.random() * (max - min + 1)) + min;
@@ -55,7 +55,7 @@ In this step, we'll add a way for our application to `listen` for the mouse to m
 
 - Open `index.html`.
 - Beneath our `getRandomNumber` function, add a new event listener.
-  - The listener should be attached to the window.
+  - MAYBE The listener should be attached to the window.
   - It should listen for the `mousemove` event.
     - Attaching to the `window` and listening for `mousemove` will allow us to fire a callback function anytime the mouse is moved in the browser window.
   - Add a callback function to the listener.
